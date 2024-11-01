@@ -13,14 +13,229 @@
     />
     
     <script type="module" crossorigin src="/Tropic-Trouble/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Tropic-Trouble/assets/styles-24ce3c0d.css">
+    <link rel="stylesheet" href="/Tropic-Trouble/assets/styles-6eda5c48.css">
   </head>
   <body>
     <header class="header">
-  <nav class="nav"></nav>
+  <div class="header-container">
+    <div class="logo-title">
+      <img
+        class="logo"
+        src="../img/logo.jpg"
+        width="32"
+        height="32"
+        alt="Logo"
+      />
+      <h2 class="tittle-logo">Tropic <span class="span-logo">Trouble</span></h2>
+    </div>
+    <button type="button" class="open-menu" id="show-menu">
+      <svg class="burger-icon" width="24" height="24">
+        <use href="/Tropic-Trouble/assets/icons-240c5e2e.svg#icon-Vector"></use>
+      </svg>
+    </button>
+    <nav class="nav-header">
+      <ul class="menu-nav">
+        <li id="menu-home" class="list-modal-nav">
+          <a
+            href="#home"
+            id="home-link"
+            class="menu-link"
+            aria-label="Home"
+            tabindex="0"
+          >
+            Home
+          </a>
+        </li>
+        <li id="menu-description" class="list-modal-nav">
+          <a
+            href="#description"
+            id="description-link"
+            class="menu-link"
+            aria-label="Game Description"
+            tabindex="0"
+            >Game Description
+          </a>
+        </li>
+        <li id="menu-reviews" class="list-modal-nav">
+          <a
+            href="#reviews"
+            id="reviews-link"
+            class="menu-link"
+            aria-label="Reviews"
+            tabindex="0"
+          >
+            Reviews
+          </a>
+        </li>
+        <li id="menu-play" class="list-modal-nav">
+          <a
+            href="#how-to-play"
+            id="how-to-play-link"
+            class="menu-link"
+            aria-label="How to Play"
+            tabindex="0"
+          >
+            How to Play
+          </a>
+        </li>
+        <li id="menu-features" class="list-modal-nav">
+          <a
+            href="#features"
+            id="features-link"
+            class="menu-link"
+            aria-label="Features"
+            tabindex="0"
+          >
+            Features
+          </a>
+        </li>
+        <li id="menu-faq" class="list-modal-nav">
+          <a
+            href="#faq"
+            id="faq-link"
+            class="menu-link"
+            aria-label="Faq"
+            tabindex="0"
+          >
+            FAQ
+          </a>
+        </li>
+        <li id="menu-gallery" class="list-modal-nav">
+          <a
+            href="#gallery"
+            id="gallery-link"
+            class="menu-link"
+            aria-label="Gallery"
+            tabindex="0"
+          >
+            Gallery
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Modal menu -->
+  <div class="modal-menu" id="modal-menu">
+    <div class="header-container header-modal">
+      <div class="logo-title">
+        <img
+          class="logo"
+          src="../img/logo.jpg"
+          width="32"
+          height="32"
+          alt="Logo"
+        />
+        <h2 class="tittle-logo">
+          Tropic <span class="span-logo">Trouble</span>
+        </h2>
+      </div>
+      <button type="button" class="close-modal" id="close-modal">x</button>
+    </div>
+
+    <nav class="nav-modal">
+      <ul class="menu-modal">
+        <li id="menu-home" class="list-modal-nav">
+          <a
+            href="#home"
+            id="home-link"
+            class="menu-link"
+            aria-label="Home"
+            tabindex="0"
+          >
+            Home
+          </a>
+        </li>
+        <li id="menu-description" class="list-modal-nav">
+          <a
+            href="#description"
+            id="description-link"
+            class="menu-link"
+            aria-label="Game Description"
+            tabindex="0"
+            >Game Description
+          </a>
+        </li>
+        <li id="menu-reviews" class="list-modal-nav">
+          <a
+            href="#reviews"
+            id="reviews-link"
+            class="menu-link"
+            aria-label="Reviews"
+            tabindex="0"
+          >
+            Reviews
+          </a>
+        </li>
+        <li id="menu-play" class="list-modal-nav">
+          <a
+            href="#how-to-play"
+            id="how-to-play-link"
+            class="menu-link"
+            aria-label="How to Play"
+            tabindex="0"
+          >
+            How to Play
+          </a>
+        </li>
+        <li id="menu-features" class="list-modal-nav">
+          <a
+            href="#features"
+            id="features-link"
+            class="menu-link"
+            aria-label="Features"
+            tabindex="0"
+          >
+            Features
+          </a>
+        </li>
+        <li id="menu-faq" class="list-modal-nav">
+          <a
+            href="#faq"
+            id="faq-link"
+            class="menu-link"
+            aria-label="Faq"
+            tabindex="0"
+          >
+            FAQ
+          </a>
+        </li>
+        <li id="menu-gallery" class="list-modal-nav">
+          <a
+            href="#gallery"
+            id="gallery-link"
+            class="menu-link"
+            aria-label="Gallery"
+            tabindex="0"
+          >
+            Gallery
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
-    
+    <div class="home">
+  <button type="button" class="video-btn">
+    <svg class="video-icon" width="49" height="56">
+      <use href="/Tropic-Trouble/assets/icons-240c5e2e.svg#icon-Polygon-1"></use>
+    </svg>
+  </button>
+  <h1 class="tittle">Tropic <span class="span">Trouble</span></h1>
+  <button type="button" class="google-btn">
+    <svg class="playstore-icon" width="21" height="24">
+      <use href="/Tropic-Trouble/assets/icons-240c5e2e.svg#icon-playstore"></use>
+    </svg>
+    <div class="btn-container">
+      <p class="btn-text">Get it on</p>
+      <svg class="google-icon" width="74" height="15">
+        <use href="/Tropic-Trouble/assets/icons-240c5e2e.svg#icon-googleplay"></use>
+      </svg>
+    </div>
+  </button>
+</div>
+
     
     
     
