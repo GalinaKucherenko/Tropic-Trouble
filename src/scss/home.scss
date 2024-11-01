@@ -1,0 +1,66 @@
+@import './common/vars';
+
+.home {
+  background-image: url(../img/home.jpg);
+  width: 320px;
+  height: 568px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-btn {
+  margin-top: 227px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  width: 124px;
+  height: 124px;
+  filter: blur(8px);
+  background: #cdf1ff;
+  opacity: 0.5;
+}
+.video-icon {
+  width: 49px;
+  height: 56px;
+}
+.tittle {
+  font-family: $_title_font;
+  font-size: 42px;
+  background: $_title_background;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 24px;
+}
+.span {
+  background: $_title_span_background;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.google-btn {
+  font-family: 'Product Sans', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #000;
+  width: 120px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  width: 120px;
+  height: 40px;
+  background: #fff;
+}
+.playstore-icon {
+  width: 21px;
+  height: 24px;
+}
+.google-icon {
+  width: 74px;
+  height: 15px;
+}

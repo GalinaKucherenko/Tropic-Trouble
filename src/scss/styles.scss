@@ -1,16 +1,7 @@
 @import './header.scss';
-@import './vite-promo.scss';
-@import './terms.scss';
-@import './common//breakpoints';
-@import './common//mixins';
-:root {
-  font-family: 'Poppins', 'Baloo', 'Product Sans', sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #000;
-  background-color: rgba(255, 255, 255, 0.87);
+@import './home.scss';
 
+:root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
