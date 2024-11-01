@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  max-width: $mobile;
+  padding: $padding;
+
+  .terms-title {
+    font-family: 'Baloo', sans-serif;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    // color: #fefe98;
+  }
+}
