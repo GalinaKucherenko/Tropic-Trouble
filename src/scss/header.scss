@@ -1,30 +1,103 @@
+@import './common/vars';
+
 .header {
-  padding: 20px 0;
-}
-
-.nav-list {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid #fff;
+  border-radius: 0 0 8px 8px;
+  background: #471b04;
+  width: 292px;
+  height: 64px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 40px;
-
-  @include media(tablet) {
-    justify-content: flex-start;
-  }
-
-  @include media(desktop) {
-    justify-content: flex-end;
-  }
+  align-items: center;
+  margin: 0 auto;
+  z-index: 1000;
 }
-
-.nav-link {
-  font-weight: 500;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #bf7e58;
+  border-radius: 0 0 8px 8px;
+  padding: 12px 14px;
+  width: 286px;
+  height: 56px;
+  background: #ffeabf;
+}
+.logo {
+  width: 32px;
+  height: 32px;
+}
+.logo-title {
+  display: flex;
+  width: 202px;
+  height: 31px;
+  justify-content: space-between;
+}
+.tittle-logo {
+  display: flex;
+  font-family: $_title_font;
+  font-size: 24px;
+  line-height: 1.3;
   letter-spacing: 0.02em;
-  @include font(30, 40);
-  color: $_header_color;
+  background: $_title_background;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.span-logo {
+  background: $_title_span_background;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.open-menu {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #471b04;
+  display: block;
+}
+.burger-icon {
+  display: inline-block;
+  stroke-width: 2px;
+  stroke: #471b04;
+}
+.nav-header {
+  display: none;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: $_header_accent_color;
+.modal-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 0 16px;
+  overflow-y: auto;
+  background-color: #fff;
+  height: 418px;
+}
+.header-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 12px;
+}
+.nav-modal {
+  margin-top: 84px;
+}
+.menu-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
