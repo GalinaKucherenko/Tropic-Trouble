@@ -22,11 +22,12 @@
   align-items: center;
   border: 2px solid #bf7e58;
   border-radius: 0 0 8px 8px;
-  padding: 12px 14px;
+  padding: 8px 14px;
   width: 286px;
   height: 56px;
   background: #ffeabf;
 }
+
 .logo {
   width: 32px;
   height: 32px;
@@ -54,7 +55,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.open-menu {
+.open-close-btn {
   width: 24px;
   height: 24px;
   padding: 0;
@@ -62,18 +63,16 @@
   justify-content: center;
   align-items: center;
   border: none;
-  background-color: #471b04;
   display: block;
 }
-.burger-icon {
-  display: inline-block;
-  stroke-width: 2px;
-  stroke: #471b04;
-}
+// .burger-icon {
+//   display: inline-block;
+//   stroke-width: 2px;
+//   stroke: #471b04;
+// }
 .nav-header {
   display: none;
 }
-
 .modal-menu {
   display: none;
   position: fixed;
@@ -84,14 +83,7 @@
   padding: 0 16px;
   overflow-y: auto;
   background-color: #fff;
-  height: 418px;
-}
-.header-modal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 0 12px;
+  height: 568px;
 }
 .nav-modal {
   margin-top: 84px;
