@@ -3,9 +3,19 @@
 .home {
   margin: 0 auto;
   background-image: url(../img/home.jpg);
+  background-size: cover;
   width: 320px;
   height: 568px;
 }
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .home {
+    background-image: url(../img/home-2x.jpg);
+  }
+}
+
 .home-container {
   display: flex;
   flex-direction: column;
@@ -30,7 +40,13 @@
   border-color: #fcee05;
   border: 2px;
 }
-
+.title-btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
 .tittle {
   font-family: $_title_font;
   font-size: 42px;
@@ -79,4 +95,43 @@
 .google-icon {
   width: 74px;
   height: 15px;
+}
+
+@include media(desktop) {
+  .home {
+    margin: 0 auto;
+    background-image: url(../img/home-desktop.jpg);
+    width: 1200px;
+    height: 538px;
+    padding: 71px 48px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .home {
+      background-image: url(../img/home-desktop-2x.jpg);
+    }
+  }
+  .home-container {
+    padding: 0;
+    flex-direction: row-reverse;
+  }
+  .video-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 634px;
+    height: 379px;
+    margin-top: 9px;
+    margin-right: 2px;
+  }
+  .tittle {
+    font-size: 64px;
+  }
+  .title-btn-container {
+    align-items: flex-start;
+    gap: 48px;
+    margin-top: 110px;
+  }
 }
