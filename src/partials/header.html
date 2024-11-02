@@ -10,9 +10,9 @@
       />
       <h2 class="tittle-logo">Tropic <span class="span-logo">Trouble</span></h2>
     </div>
-    <button type="button" class="open-menu" id="show-menu">
+    <button type="button" class="open-close-btn" id="show-menu">
       <svg class="burger-icon" width="24" height="24">
-        <use href="img/icons.svg#icon-Vector"></use>
+        <use href="./img/icons.svg#icon-Vector"></use>
       </svg>
     </button>
     <nav class="nav-header">
@@ -99,20 +99,26 @@
 
   <!-- Modal menu -->
   <div class="modal-menu" id="modal-menu">
-    <div class="header-container header-modal">
-      <div class="logo-title">
-        <img
-          class="logo"
-          src="../img/logo.jpg"
-          width="32"
-          height="32"
-          alt="Logo"
-        />
-        <h2 class="tittle-logo">
-          Tropic <span class="span-logo">Trouble</span>
-        </h2>
+    <div class="header">
+      <div class="header-container">
+        <div class="logo-title">
+          <img
+            class="logo"
+            src="../img/logo.jpg"
+            width="32"
+            height="32"
+            alt="Logo"
+          />
+          <h2 class="tittle-logo">
+            Tropic <span class="span-logo">Trouble</span>
+          </h2>
+        </div>
+        <button type="button" class="open-close-btn" id="close-modal">
+          <svg class="close-icon" width="18" height="19">
+            <use href="./img/icons.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
-      <button type="button" class="close-modal" id="close-modal">x</button>
     </div>
 
     <nav class="nav-modal">
