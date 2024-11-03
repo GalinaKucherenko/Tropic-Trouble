@@ -1,0 +1,237 @@
+.gameplay-container {
+  width: 100%;
+  max-width: $mobile;
+  padding: $padding;
+  margin: 0 auto;
+  position: relative;
+
+  &::before {
+    content: '';
+    background-image: url('../img/cloud-top-comp.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 200;
+  }
+
+  .gameplay-title {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 32px;
+    line-height: 1.3; // Переписано
+    letter-spacing: 0.02em; // Переписано
+    color: #fefe98;
+    background-image: url('../img//section-name.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px 20px;
+    text-shadow: -1px -1px 0 #945e0b, 1px -1px 0 #945e0b, -1px 1px 0 #945e0b,
+      1px 1px 0 #945e0b;
+    text-align: center;
+    position: relative;
+    z-index: 250;
+    top: 60px;
+    margin-bottom: 95px;
+  }
+
+  .gameplay-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .gameplay-item {
+    position: relative;
+    border-radius: 8px;
+    padding: 18px 16px;
+    width: 288px;
+    box-shadow: 0 16px 40px 0 rgba(75, 39, 21, 0.2);
+    background: linear-gradient(167deg, #ffeabf 0%, #f4d596 100%);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5; // Переписано
+    color: #471b04;
+    border: 2px solid #5e4005;
+    z-index: 200;
+  }
+
+  .item-1::after {
+    content: '';
+    position: absolute;
+    bottom: 60px;
+    right: -10px;
+    width: 38px;
+    height: 60px;
+    background-image: url('../img/rune-one-mob.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 8px 8px 0;
+  }
+
+  .item-2::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: -14px;
+    width: 120px;
+    height: 90px;
+    background-image: url('../img/rune-two-mob.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 8px 8px 0;
+  }
+
+  .item-3::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: -12px;
+    width: 38px;
+    height: 60px;
+    background-image: url('../img/rune-three-mob.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 8px 8px 0;
+  }
+
+  .item-4::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: -12px;
+    width: 38px;
+    height: 60px;
+    background-image: url('../img/rune-four-mob.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 8px 8px 0;
+  }
+
+  .item-5::after {
+    content: '';
+    position: absolute;
+    top: 55px;
+    right: -20px;
+    width: 120px;
+    height: 90px;
+    background-image: url('../img/rune-funf-mob.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 8px 8px 0;
+  }
+
+  .gameplay-item-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5; // Переписано
+    margin-right: 10px;
+  }
+
+  &::after {
+    content: '';
+    background-image: url('../img/cloud-down-mob.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 150px;
+    z-index: 10;
+  }
+
+  @include media(desktop) {
+    max-width: $desktop;
+    padding: $padding;
+    width: auto;
+    padding: 0;
+    margin: 0 auto;
+
+    .gameplay-title {
+      text-align: center;
+      font-size: 42px;
+      background-image: url('../img/section-name-dekstop.png');
+      padding: 30px 20px;
+      background-size: 400px auto;
+      margin-bottom: 150px;
+      position: relative;
+      z-index: 250;
+      top: 120px;
+    }
+
+    .gameplay-item-text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .item-1::after,
+    .item-2::after,
+    .item-3::after,
+    .item-4::after,
+    .item-5::after {
+      display: none;
+    }
+
+    &::before {
+      background-image: url('../img/cloud-top-comp.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: -40px;
+      left: 0;
+      width: 100%;
+      height: 140px;
+      z-index: 200;
+    }
+
+    &::after {
+      background-image: url('../img/cloud-down-comp.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: -80px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 150px;
+      z-index: -20;
+      top: calc(100% + 50px);
+      z-index: 300;
+    }
+
+    .gameplay-list {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 32px;
+    }
+
+    .gameplay-item {
+      position: relative;
+      border-radius: 8px;
+      padding: 18px 16px;
+      min-width: 352px;
+      box-shadow: 0 16px 40px 0 rgba(75, 39, 21, 0.2);
+      background: linear-gradient(167deg, #ffeabf 0%, #f4d596 100%);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .gameplay-item.large-item {
+      width: 540px;
+    }
+  }
+}

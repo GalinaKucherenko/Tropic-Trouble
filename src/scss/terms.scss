@@ -2,13 +2,220 @@
   width: 100%;
   max-width: $mobile;
   padding: $padding;
+  margin: 0 auto;
 
   .terms-title {
-    font-family: 'Baloo', sans-serif;
-    font-weight: 400;
-    font-size: 42px;
-    line-height: 130%;
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 32px;
+    line-height: 1.3;
     letter-spacing: 0.02em;
-    // color: #fefe98;
+    color: #fefe98;
+    margin-bottom: 24px;
+    background-image: url('../img//section-name.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px 20px;
+    text-shadow: -1px -1px 0 #945e0b, 1px -1px 0 #945e0b, -1px 1px 0 #945e0b,
+      1px 1px 0 #945e0b;
+  }
+
+  .last-updated {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  .update-date {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .introduction {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  .game-website {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  .term-title {
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+  }
+  .term-description {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .term-item {
+    border-top: 4px solid #945e0b;
+    border-radius: 8px;
+    padding: 18px 16px;
+    width: 288px;
+    height: auto;
+    margin-bottom: 16px;
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 16px 40px 0 rgba(75, 39, 21, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .term-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .term-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #945e0b;
+    border-radius: 50%;
+    padding: 8px;
+    width: 28px;
+    height: 28px;
+    background: #471b04;
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.3;
+    text-align: center;
+    color: #fefe98;
+  }
+  .terms-list {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .terms-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .terms-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .terms-list-next {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .diamond {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    background-color: transparent;
+    transform: rotate(45deg);
+    aspect-ratio: 1 / 1;
+
+    &.pink {
+      background: linear-gradient(
+        180deg,
+        #c30093 0%,
+        #e63393 46.35%,
+        #f9d 100%
+      );
+    }
+
+    &.blue {
+      background: linear-gradient(220deg, #0347be 0%, #2c79ff 100%);
+    }
+
+    &.green {
+      background: linear-gradient(231deg, #00843d 0%, #28d914 100%);
+    }
+  }
+  @include media(desktop) {
+    max-width: $desktop;
+    width: auto;
+    margin: 0 auto;
+    .terms-title {
+      text-align: center;
+      font-size: 42px;
+      margin-bottom: 24px;
+      background-image: url('../img//section-name-dekstop.png');
+      padding: 40px 20px;
+      background-size: 400px auto;
+    }
+    .last-updated {
+      text-align: right;
+    }
+    .introduction {
+      font-size: 16px;
+      margin-bottom: 82px;
+    }
+    .term-item {
+      width: 1100px;
+      margin-bottom: 82px;
+    }
+    .terms-list {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      align-content: center;
+      flex-wrap: wrap;
+    }
+    .term-description {
+      font-size: 16px;
+      margin-left: 35px;
+    }
+    .game-website {
+      font-size: 16px;
+    }
+    .term-item {
+      display: flex;
+      flex-direction: column;
+    }
+    .term-item {
+      flex-direction: column;
+      position: relative;
+    }
+
+    .term-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .term-number {
+      position: absolute;
+      left: -35px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 70px;
+      height: 70px;
+      font-size: 24px;
+      line-height: 1.3;
+      letter-spacing: 0.02em;
+    }
+    .term-title {
+      margin-left: 35px;
+    }
+    .terms-text {
+      font-size: 16px;
+    }
+    .terms-item {
+      margin-left: 35px;
+    }
   }
 }
