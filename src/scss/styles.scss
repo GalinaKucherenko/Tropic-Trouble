@@ -1,12 +1,16 @@
 @import './header.scss';
-@import './vite-promo.scss';
 @import './terms.scss';
 @import './common//breakpoints';
 @import './common//mixins';
+<<<<<<< HEAD
 @import './how-to-play.scss';
 @import './features.scss';
 @import './faq.scss';
 @import './gallery.scss';
+=======
+@import './home.scss';
+@import './privace-policy.scss';
+>>>>>>> main
 
 :root {
   font-family: 'Poppins', 'Baloo', 'Product Sans', sans-serif;
