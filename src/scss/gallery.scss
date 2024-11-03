@@ -15,7 +15,7 @@
     line-height: 1.3;
     letter-spacing: 0.02em;
     color: #fefe98;
-    background-image: url('../img//section-name.png');
+    background-image: url('../img/section-name.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,11 +26,34 @@
     margin-top: 15px;
     margin-bottom: 32px;
     z-index: 250;
+
+    .swiper-slide img {
+      width: 204px;
+      height: 113px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .swiper-pagination-bullet {
+      width: 18px;
+      height: 18px;
+      border-radius: 60px;
+      background: linear-gradient(180deg, #954b25 0%, #d68329 84.63%);
+      opacity: 1;
+      transition: all 0.3s ease;
+    }
+
+    .swiper-pagination-bullet-active {
+      width: 38px;
+      height: 18px;
+      border-radius: 60px;
+      background: linear-gradient(180deg, #954b25 0%, #d68329 84.63%);
+      opacity: 1;
+    }
   }
+
   @include media(desktop) {
     max-width: $desktop;
-    padding: $padding;
-    width: auto;
     padding: 0;
     margin: 0 auto;
     position: relative;
@@ -40,7 +63,7 @@
     .gallery-title {
       text-align: center;
       font-size: 42px;
-      background-image: url('../img/section-name-dekstop.png');
+      background-image: url('../img/section-name-desktop.png');
       padding: 80px 48px;
       background-size: 400px auto;
     }
