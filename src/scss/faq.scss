@@ -57,6 +57,19 @@
     box-shadow: none;
     padding: 0;
     margin: 0;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .faq-arrow::before,
+  .faq-arrow::after {
+    content: '';
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background: transparent;
   }
 
   .faq-answer {
