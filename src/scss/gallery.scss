@@ -1,0 +1,48 @@
+.gallery-container {
+  width: 100%;
+  max-width: $mobile;
+  padding: $padding;
+  margin: 0 auto;
+  background-color: #28a3de !important;
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(220deg, #0347be 0%, #2c79ff 100%);
+  border-radius: 32px 32px 0 0;
+
+  .gallery-title {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 32px;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    color: #fefe98;
+    background-image: url('../img//section-name.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px 20px;
+    text-shadow: -1px -1px 0 #945e0b, 1px -1px 0 #945e0b, -1px 1px 0 #945e0b,
+      1px 1px 0 #945e0b;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 32px;
+    z-index: 250;
+  }
+  @include media(desktop) {
+    max-width: $desktop;
+    padding: $padding;
+    width: auto;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    bottom: 170px;
+
+    .gallery-title {
+      text-align: center;
+      font-size: 42px;
+      background-image: url('../img/section-name-dekstop.png');
+      padding: 80px 48px;
+      background-size: 400px auto;
+    }
+  }
+}
