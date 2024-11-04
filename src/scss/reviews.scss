@@ -1,0 +1,106 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &::before {
+    content: '';
+    background-image: url(../img/cloud-top-mob.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 320px;
+    height: 96px;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.reviews-container {
+  width: 320px;
+  margin: 0 auto;
+  border-radius: 0 0 42px 42px;
+  padding: 71px 16px 48px 16px;
+}
+
+.list-reviews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 48px;
+}
+.item-reviews {
+  position: relative;
+  // padding: 16px 16px;
+  width: 288px;
+  height: 126px;
+  box-shadow: 0 16px 40px 0 rgba(75, 39, 21, 0.2);
+  background: linear-gradient(167deg, #ffeabf 0%, #f4d596 100%);
+}
+.starts-img {
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.title-reviews {
+  font-family: 'Baloo', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  color: #fefe98;
+  text-align: center;
+  margin-bottom: 8px;
+  text-shadow: -1px -1px 0 #945e0b, 1px -1px 0 #945e0b, -1px 1px 0 #945e0b,
+    1px 1px 0 #945e0b;
+}
+
+// Swiper
+.swiper {
+  // max-width: 320px;
+  // width: 100%;
+  // height: 143px;
+  margin: 0 auto;
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+.swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 288px;
+  height: 126px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.swiper-pagination-bullet {
+  border-radius: 60px;
+  background: linear-gradient(180deg, #954b25 0%, #d68329 84.63%);
+  width: 18px;
+  height: 18px;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  width: 38px;
+  background: linear-gradient(180deg, #954b25 0%, #d68329 84.63%);
+  opacity: 1;
+}
