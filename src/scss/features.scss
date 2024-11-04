@@ -12,11 +12,15 @@
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
-    top: -30px;
+    top: -50px;
     left: 0;
     width: 100%;
     height: 100px;
     z-index: 200;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/cloud-top-comp-2x.png');
+    }
   }
 
   .gameplay-title {
@@ -37,6 +41,10 @@
     z-index: 250;
     top: 60px;
     margin-bottom: 95px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/section-name-x2.png');
+    }
   }
 
   .gameplay-list {
@@ -72,6 +80,10 @@
     background-size: cover;
     background-position: center;
     border-radius: 0 8px 8px 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/rune-one-mob-x2.png');
+    }
   }
 
   .item-2::after {
@@ -85,6 +97,10 @@
     background-size: cover;
     background-position: center;
     border-radius: 0 8px 8px 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/rune-two-mob-x2.png');
+    }
   }
 
   .item-3::after {
@@ -98,6 +114,10 @@
     background-size: cover;
     background-position: center;
     border-radius: 0 8px 8px 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/rune-three-mob-x2.png');
+    }
   }
 
   .item-4::after {
@@ -111,6 +131,10 @@
     background-size: cover;
     background-position: center;
     border-radius: 0 8px 8px 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/rune-four-mob-x2.png');
+    }
   }
 
   .item-5::after {
@@ -124,12 +148,16 @@
     background-size: cover;
     background-position: center;
     border-radius: 0 8px 8px 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/rune-funf-mob-x2.png');
+    }
   }
 
   .gameplay-item-text {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.5; // Переписано
+    line-height: 1.5;
     margin-right: 10px;
   }
 
@@ -146,6 +174,10 @@
     width: 100%;
     height: 150px;
     z-index: 10;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/cloud-down-mob-x2.png');
+    }
   }
 
   @include media(desktop) {
@@ -165,6 +197,10 @@
       position: relative;
       z-index: 250;
       top: 120px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url('../img/section-name-dekstop-x2.png');
+      }
     }
 
     .gameplay-item-text {
@@ -187,11 +223,14 @@
       background-position: center;
       background-repeat: no-repeat;
       position: absolute;
-      top: -40px;
+      top: -68px;
       left: 0;
       width: 100%;
       height: 140px;
       z-index: 200;
+      @media (min-resolution: 2dppx) {
+        background-image: url('../img/cloud-top-comp-2x.png');
+      }
     }
 
     &::after {
@@ -208,6 +247,10 @@
       z-index: -20;
       top: calc(100% + 50px);
       z-index: 300;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url('../img/cloud-down-comp-x2.png');
+      }
     }
 
     .gameplay-list {
