@@ -26,12 +26,41 @@
     margin-top: 15px;
     margin-bottom: 32px;
     z-index: 250;
+  }
 
-    .swiper-slide img {
-      width: 204px;
-      height: 113px;
-      object-fit: cover;
-      border-radius: 10px;
+  .swiper {
+    width: 100%;
+    height: 338px;
+    overflow: hidden;
+
+    .swiper-wrapper {
+      bottom: 43px;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+
+      transition: filter 0.3s ease;
+      width: 164px;
+      height: 300px;
+      margin-right: 16px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+
+    .swiper-slide-active {
+      width: 164px;
+      height: 300px;
+      margin-right: 16px;
+      filter: blur(0);
     }
 
     .swiper-pagination-bullet {
@@ -40,21 +69,18 @@
       border-radius: 60px;
       background: linear-gradient(180deg, #954b25 0%, #d68329 84.63%);
       opacity: 1;
-      transition: all 0.3s ease;
     }
 
     .swiper-pagination-bullet-active {
       width: 38px;
       height: 18px;
-      border-radius: 60px;
       background: linear-gradient(180deg, #954b25 0%, #d68329 84.63%);
-      opacity: 1;
     }
   }
 
   @include media(desktop) {
     max-width: $desktop;
-    padding: 0;
+    padding: 0 48px;
     margin: 0 auto;
     position: relative;
     z-index: 2;
@@ -66,6 +92,59 @@
       background-image: url('../img/section-name-dekstop.png');
       padding: 80px 48px;
       background-size: 400px auto;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+
+      .swiper-wrapper {
+        top: 43px;
+      }
+
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        transition: transform 0.3s ease;
+        width: calc(100% / 6 - 48px);
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+      }
+
+      .swiper-slide-active {
+        transform: scale(1.1);
+      }
+
+      .swiper-slide:not(.swiper-slide-active) {
+        transform: scale(0.9);
+      }
+
+      .swiper-pagination {
+        bottom: 20px;
+      }
+
+      .swiper-pagination-bullet {
+        width: 18px;
+        height: 18px;
+        border-radius: 60px;
+        background: linear-gradient(180deg, #fcc40b 0%, #fcee05 85.57%);
+        opacity: 1;
+        margin: 0 4px;
+      }
+
+      .swiper-pagination-bullet-active {
+        width: 38px;
+        height: 18px;
+        background: linear-gradient(180deg, #fcc40b 0%, #fcee05 85.57%);
+      }
     }
   }
 }
