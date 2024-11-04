@@ -40,15 +40,15 @@
 }
 .tittle-logo {
   display: flex;
-  font-family: $_title_font;
+  font-family: $_header_title_font;
   font-size: 24px;
-  background: $_title_background;
+  background: $_header_title_background;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .span-logo {
-  background: $_title_span_background;
+  background: $_header_title_span_background;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -70,18 +70,20 @@
   display: none;
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
   z-index: 1000;
   padding: 0 16px;
   overflow-y: auto;
   background-color: #fff;
-  height: 568px;
+  height: 100hv;
 }
 .nav-modal {
   margin-top: 84px;
+  margin-bottom: 115px;
 }
-.menu-modal {
+.list-modal {
   display: flex;
   flex-direction: column;
   gap: 16px;

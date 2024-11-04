@@ -30,14 +30,36 @@
     transform: translateX(-50%);
   }
 }
-.title-descr {
-  margin-top: 90px;
+.description-container {
+  padding: 71px 16px 48px 16px;
+}
+.title-background {
+  width: 288px;
+  height: 60px;
+  background-image: url(../img/background-title.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title-background h2 {
+  text-shadow: -1px -1px 0 #945e0b, 1px -1px 0 #945e0b, -1px 1px 0 #945e0b,
+    1px 1px 0 #945e0b;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .title-background {
+    background-image: url(../img/background-title2x.jpg);
+  }
 }
 .list-description {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin: 48px 0;
+  margin-top: 48px;
 }
 
 .img-item-descr {
@@ -73,43 +95,49 @@
 
 @include media(desktop) {
   .description {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-
     &::before {
       content: '';
       background-image: url(../img/cloud-top-comp.png);
-      background-size: cover;
-      background-position: center;
-      position: absolute;
       width: 1200px;
       height: 160px;
       top: -60px;
-      left: 50%;
-      transform: translateX(-50%);
     }
     &::after {
       content: '';
       background-image: url(../img/cloud-down-comp.png);
-      background-size: cover;
-      background-position: center;
-      position: absolute;
       width: 1200px;
       height: 160px;
-      bottom: -95px;
-      left: 50%;
-      transform: translateX(-50%);
+      bottom: -50px;
+    }
+  }
+  .description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 102px;
+  }
+
+  .title-background {
+    background-image: url(../img/background-title-desktop.jpg);
+    width: 397px;
+    height: 100px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .title-background {
+      background-image: url(../img/background-title-desktop-2x.jpg);
     }
   }
   .list-description {
     flex-direction: row;
     gap: 24px;
+
     margin-bottom: 70px;
   }
   .item-description {
+    color: #000;
     width: 352px;
     height: 156px;
     padding: 18px 16px 18px 54px;

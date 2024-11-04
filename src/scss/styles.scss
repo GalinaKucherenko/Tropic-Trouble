@@ -11,14 +11,16 @@
 
 @import './home.scss';
 @import './description.scss';
+@import './main-image.scss';
 @import './privace-policy.scss';
+@import './reviews.scss';
 
 :root {
   font-family: 'Poppins', 'Baloo', 'Product Sans', sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #471b04;
   background-color: #ffffff;
 
   font-synthesis: none;

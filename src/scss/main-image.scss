@@ -1,0 +1,36 @@
+.main-image {
+  background-image: url(../img/main-image_mobile.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 320px;
+  height: 445px;
+  margin: 0 auto;
+  margin-top: 54px;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .main-image {
+    background-image: url(../img/main-image_mobile-2x.jpg);
+  }
+}
+
+@include media(desktop) {
+  .main-image {
+    background-image: url(../img/main-image.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 1200px;
+    height: 487px;
+    margin-top: 0;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .main-image {
+      background-image: url(../img/main-image2x.jpg);
+    }
+  }
+}
