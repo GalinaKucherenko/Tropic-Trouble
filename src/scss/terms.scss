@@ -229,3 +229,79 @@
     }
   }
 }
+
+//FOOTER//////////////////
+.next-footer {
+  width: 100%;
+  max-width: $mobile;
+  padding: $padding;
+  margin: 0 auto;
+  background-color: #ffeabf !important;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 2px solid #945e0b;
+  border-radius: 8px 8px 0 0;
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .links-main {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    color: #471b04;
+  }
+  .footer-copyright {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    color: #471b04;
+  }
+  .footer-year {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    color: #471b04;
+  }
+  .footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: center;
+  }
+  .logo-pet {
+    display: none;
+  }
+
+  @include media(desktop) {
+    max-width: $desktop;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 27px 48px;
+
+    .footer-links {
+      flex-direction: row;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 0;
+    }
+
+    .footer-info {
+      flex-direction: row;
+      text-align: right;
+      align-items: center;
+    }
+    .logo-pet {
+      display: block;
+    }
+  }
+}
