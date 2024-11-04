@@ -21,6 +21,10 @@
     text-align: center;
     z-index: 50;
     margin-top: 100px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/section-name-x2.png');
+    }
   }
 
   .instruction-item {
@@ -50,6 +54,10 @@
     z-index: 10;
     margin-top: -3px;
     gap: 5px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/st-one-x2.png');
+    }
   }
 
   .term-number-one {
@@ -129,6 +137,10 @@
     margin-top: -18px;
     margin-left: -20px;
     z-index: 9;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/st-two-x2.png');
+    }
   }
 
   .term-number-three {
@@ -176,6 +188,10 @@
     margin-top: -23px;
     margin-left: -10px;
     z-index: 8;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/st-three-x2.png');
+    }
   }
 
   .term-number-four {
@@ -221,6 +237,10 @@
     margin-top: -25px;
     margin-left: -5px;
     z-index: 7;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/st-four-x2.png');
+    }
   }
 
   .term-number-five {
@@ -267,6 +287,10 @@
     margin-top: -39px;
     margin-left: -10px;
     z-index: 6;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/st-five-x2.png');
+    }
   }
 
   @include media(desktop) {
@@ -282,6 +306,10 @@
       padding: 80px 20px;
       background-size: 400px auto;
       margin-top: 47px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url('../img/section-name-dekstop-x2.png');
+      }
     }
 
     .instructions-list {
@@ -331,6 +359,10 @@
       max-width: 620px;
       height: 300px;
       margin: 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url('../img/tree-one-x2.png');
+      }
     }
 
     .two-img {
@@ -339,6 +371,10 @@
       max-width: 580px;
       height: 340px;
       margin: 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url('../img/tree-two-x2.png');
+      }
     }
 
     .three-img {
@@ -347,6 +383,10 @@
       max-width: 580px;
       height: 370px;
       margin: 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url('../img/tree-three-x2.png');
+      }
     }
 
     .four-img {
@@ -355,6 +395,10 @@
       height: 300px;
       max-width: 620px;
       margin: 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url('../img/tree-four-x2.png');
+      }
     }
 
     .five-img {
@@ -363,6 +407,10 @@
       max-width: 620px;
       height: 370px;
       margin: 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url('../img/tree-five-x2.png');
+      }
     }
 
     .content-container {

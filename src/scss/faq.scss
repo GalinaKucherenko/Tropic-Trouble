@@ -25,6 +25,10 @@
     margin-top: 15px;
     margin-bottom: 32px;
     z-index: 250;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/section-name-x2.png');
+    }
   }
 
   .faq-item {
@@ -105,6 +109,10 @@
     background-size: cover;
     background-position: center;
     z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/decor-l-x2.png');
+    }
   }
 
   &::after {
@@ -118,6 +126,10 @@
     background-size: cover;
     background-position: center;
     z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/decor-r-x2.png');
+    }
   }
   .faq-list {
     margin-bottom: 200px;
@@ -140,6 +152,10 @@
       z-index: 250;
       top: 120px;
       margin-top: 80px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url('../img/section-name-dekstop-x2.png');
+      }
     }
     .faq-item {
       width: 540px;
@@ -159,12 +175,20 @@
       background-image: url('../img/decor-l-desktop.png');
       width: 500px;
       height: 420px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url('../img/decor-l-desktop-x2.png');
+      }
     }
 
     &::after {
       background-image: url('../img/decor-r-desktop.png');
       width: 500px;
       height: 420px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url('../img/decor-r-desktop-x2.png');
+      }
     }
     .faq-question {
       font-size: 24px;
