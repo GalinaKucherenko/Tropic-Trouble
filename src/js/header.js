@@ -13,3 +13,9 @@ document
       this.style.display = 'none';
     }
   });
+
+document.querySelectorAll('.list-modal-nav a').forEach(link => {
+  link.addEventListener('click', function () {
+    document.getElementById('modal-menu').style.display = 'none';
+  });
+});
