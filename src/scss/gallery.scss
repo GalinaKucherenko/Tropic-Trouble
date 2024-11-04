@@ -77,14 +77,49 @@
       background: linear-gradient(180deg, #954b25 0%, #d68329 84.63%);
     }
   }
-
+  .google-btn1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    width: 120px;
+    height: 40px;
+    background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+  }
+  .btn-text1 {
+    font-family: 'Product Sans', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #000;
+  }
+  .playstore-icon1 {
+    width: 21px;
+    height: 24px;
+  }
+  .btn-container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+    margin-left: 7px;
+  }
+  .google-icon1 {
+    width: 74px;
+    height: 15px;
+  }
   @include media(desktop) {
     max-width: $desktop;
-    padding: 0 48px;
+    padding: 48px;
     margin: 0 auto;
     position: relative;
     z-index: 2;
-    bottom: 170px;
 
     .gallery-title {
       text-align: center;
@@ -93,7 +128,9 @@
       padding: 80px 48px;
       background-size: 400px auto;
     }
-
+    .google-btn1 {
+      margin-top: 43px;
+    }
     .swiper {
       width: 100%;
       height: 500px;
@@ -129,6 +166,11 @@
 
       .swiper-pagination {
         bottom: 20px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
       }
 
       .swiper-pagination-bullet {
