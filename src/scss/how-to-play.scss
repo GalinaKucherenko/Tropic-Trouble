@@ -485,5 +485,16 @@
       top: 240px;
       left: 47px;
     }
+    .instruction-item {
+      display: flex;
+      opacity: 0;
+      transform: translateY(60px) scale(1);
+      transition: opacity 1s ease-out, transform 3s ease-out;
+    }
+
+    .instruction-item.visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
   }
 }
