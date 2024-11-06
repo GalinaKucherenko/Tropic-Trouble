@@ -30,8 +30,27 @@
     transform: translateX(-50%);
   }
 }
-.description-container {
-  padding: 71px 16px 48px 16px;
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .description {
+    &::before {
+      background-image: url(../img/cloud-top-mob-x2.png);
+    }
+    &::after {
+      content: '';
+      background-image: url(../img/cloud-down-mob-x2.png);
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      width: 320px;
+      height: 96px;
+      bottom: -90px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 }
 .title-background {
   width: 288px;
@@ -55,6 +74,10 @@
     background-image: url(../img/background-title2x.jpg);
   }
 }
+.description-container {
+  padding: 71px 16px 48px 16px;
+}
+
 .list-description {
   display: flex;
   flex-direction: column;
@@ -108,6 +131,27 @@
       width: 1200px;
       height: 160px;
       bottom: -50px;
+    }
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .description {
+      &::before {
+        background-image: url(../img/cloud-top-comp-2x.png);
+      }
+      &::after {
+        content: '';
+        background-image: url(../img/cloud-down-comp-x2.png);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        width: 320px;
+        height: 96px;
+        bottom: -90px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
   }
   .description-container {
