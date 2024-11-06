@@ -81,7 +81,7 @@
   padding: 0 16px;
   overflow-y: auto;
   background-color: #fff;
-  height: 100hv;
+  height: 100vh;
 }
 .nav-modal {
   margin-top: 84px;
@@ -91,6 +91,12 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+.footer-info1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  text-align: center;
 }
 
 @include media(desktop) {
