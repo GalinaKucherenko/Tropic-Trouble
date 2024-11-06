@@ -67,15 +67,18 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #00843d;
 }
 .span {
   background: $_header_title_span_background;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #df6802;
 }
 
 .google-btn {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,6 +111,17 @@
 .google-icon {
   width: 74px;
   height: 15px;
+}
+
+.google-btn:hover {
+  border: 1px solid #a6a6a6;
+  background: #000;
+  .btn-text {
+    color: #fff;
+  }
+  .google-icon {
+    fill: #fff;
+  }
 }
 
 @include media(desktop) {

@@ -9,7 +9,7 @@
   border-radius: 0 0 8px 8px;
   background: #471b04;
   width: 292px;
-  height: 64px;
+  height: 65px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,11 +24,12 @@
   border-radius: 0 0 8px 8px;
   padding: 8px 14px;
   width: 286px;
-  height: 56px;
+  height: 59px;
   background: #ffeabf;
 }
 
 .logo {
+  border-radius: 4px;
   width: 32px;
   height: 32px;
 }
@@ -46,12 +47,14 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.5px #00843d;
 }
 .span-logo {
   background: $_header_title_span_background;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.5px #df6802;
 }
 .open-close-btn {
   width: 24px;
@@ -95,8 +98,8 @@
     height: 71px;
   }
   .header-container {
-    width: 1098px;
-    height: 61px;
+    width: 110px;
+    height: 67px;
     padding: 10px 48px;
   }
   .open-close-btn {
