@@ -19,6 +19,15 @@
     transform: translateX(-50%);
   }
 }
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .reviews {
+    &::before {
+      background-image: url(../img/cloud-top-mob-x2.png);
+    }
+  }
+}
 .reviews-container {
   display: flex;
   flex-direction: column;
@@ -103,6 +112,15 @@
       width: 1200px;
       height: 160px;
       top: -75px;
+    }
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .reviews {
+      &::before {
+        background-image: url(../img/cloud-top-comp-2x.png);
+      }
     }
   }
   .reviews-container {
