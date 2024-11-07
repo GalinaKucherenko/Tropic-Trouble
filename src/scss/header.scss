@@ -82,6 +82,10 @@
   overflow-y: auto;
   background-color: #fff;
   height: 100vh;
+  //
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 .nav-modal {
   margin-top: 84px;
